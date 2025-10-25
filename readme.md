@@ -1,0 +1,3 @@
+Este proyecto es sobre una pagina web de un local de venta de repuestos para autos, brinda informacion sobre las diferentes clases de piezas delvehiculo como asi tambien de accesorios.
+implemente tipos de vista y animaciones para las diferentes partes del cuerpo del proyecto como el header, footer y la implementacion de videos.
+mi idea es implementar un buscador de piezas que muestre donde van ubicadas dentro del vehiculo, tambien agregar un carrito de productos y que prepare una orden de venta.

@@ -1,0 +1,293 @@
+/* === ESTILOS GENERALES === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b60303de;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #fff;
+}
+
+/* === ENCABEZADO === */
+.header:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('/imagenes/freno.jpg') center/cover no-repeat;
+  opacity: 0.1;
+  z-index: 0;
+}
+.site-header {
+  background-color: #004d80;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #ffcc00;
+}
+
+.cart {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+/* === BOTÓN HAMBURGUESA === */
+.hamburguer {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburguer .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #06ea11;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* === HERO === */
+.hero {
+  background-color: #b60303de;
+  padding: 60px 0;
+  text-align: center;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.hero-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin: 20px 0;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #06fc1e;
+  color: #100110;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #00d615;
+  transform: scale(1.05);
+}
+
+/* === VIDEO DE FONDO === */
+#bg-video {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* === PRODUCTOS DESTACADOS === */
+.featured-products {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.featured-products h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #201fe1;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* === FOOTER === */
+#footer {
+  background: linear-gradient(180deg, #0a0a0a 0%, #111 100%);
+  color: #eee;
+  padding: 60px 0 20px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Fondo semitransparente */
+#footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('/imagenes/freno.jpg') center/cover no-repeat;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+#footer .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Formulario */
+#footer .form-group label {
+  color: #bbb;
+  font-weight: 600;
+}
+
+#footer .form-control {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+}
+
+#footer .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #0d6efd;
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.3);
+}
+
+/* Redes Sociales */
+.social-icons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.social-icons li a img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-icons li a img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px rgba(13, 110, 253, 0.4);
+}
+
+/* Derechos de autor */
+.footer-copyright {
+  border-top: 1px solid rgba(250, 244, 244, 0.1);
+  margin-top: 40px;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #f0e2e2;
+  text-align: center;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #004d80;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hamburguer {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footer .form-control {
+    max-width: 100%;
+  }
+}
